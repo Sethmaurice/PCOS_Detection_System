@@ -1,0 +1,11 @@
+Title: PCOS Detection System Deployment
+
+Description:
+
+Our PCOS Detection System is a comprehensive solution developed to identify Polycystic Ovary Syndrome (PCOS) using advanced Big Data and Machine Learning techniques. The project utilizes Django for the user interface, providing an intuitive platform for users to interact with the system.
+
+The backend is powered by Python, where we applied rigorous data cleaning techniques to ensure the accuracy of the model. Statistical analysis played a pivotal role in understanding and processing the dataset, setting the foundation for robust model training.
+
+For the core functionality, we implemented machine learning models capable of making accurate predictions. The trained models are serialized into joblib files, which are seamlessly integrated into the Django UI. This allows users to input relevant data and obtain real-time predictions regarding the likelihood of PCOS.
+
+In summary, our deployment encompasses a user-friendly Django interface, a backend powered by Python models, and a streamlined process from data cleaning and statistical analysis to model training and prediction. The joblib files ensure the efficiency of the predictive model, making our PCOS Detection System a valuable tool for early diagnosis and intervention.

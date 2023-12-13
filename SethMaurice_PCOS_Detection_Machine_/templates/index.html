@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Input Form</title>
+    <link rel="stylesheet" href="path/to/your/styles.css" />
+  </head>
+
+  <body>
+    <h2>Enter Your Information</h2>
+    <form action="{% url 'results' %}" method="get">
+      {% csrf_token %}
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required /><br />
+
+      <label for="weight">Weight:</label>
+      <input type="text" id="weight" name="weight" required /><br />
+
+      <label for="height">Height:</label>
+      <input type="text" id="height" name="height" required /><br />
+
+      <label for="bmi">BMI:</label>
+      <input type="text" id="bmi" name="bmi" required /><br />
+
+      <label for="bloodgroup">Blood Group:</label>
+      <select id="bloodgroup" name="bloodgroup">
+        <option value="1">A+</option>
+        <option value="2">A-</option>
+        <option value="3">B+</option>
+        <option value="4">B-</option>
+        <option value="5">O+</option>
+        <option value="6">O-</option>
+        <option value="7">AB+</option>
+        <option value="8">AB-</option></select
+      ><br />
+
+      <label for="hairgrowth">Hair Growth:</label>
+      <input type="text" id="hairgrowth" name="hairgrowth" required /><br />
+
+      <label for="hairloss">Hair Loss:</label>
+      <input type="text" id="hairloss" name="hairloss" required /><br />
+
+      <label for="weightgain">Weight Gain (Y/N):</label>
+      <input type="text" id="weightgain" name="weightgain" required /><br />
+
+      <label for="skindarken">Skin Darkening (Y/N):</label>
+      <input type="text" id="skindarken" name="skindarken" required /><br />
+
+      <label for="pimples">Pimples (Y/N):</label>
+      <input type="text" id="pimples" name="pimples" required /><br />
+
+      <label for="fastfood">Fast Food (Y/N):</label>
+      <input type="text" id="fastfood" name="fastfood" required /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
